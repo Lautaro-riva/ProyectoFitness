@@ -1,0 +1,42 @@
+@use "../variables/colors" as *;
+
+.header__container {
+    margin: 0 auto;
+    width: 100%;
+    color: aqua;
+}
+.header {
+    background-color: $background-color2;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    padding-top: 0rem;
+    gap:1.5rem;
+   /* &__logo{
+        
+    }*/
+    &__start{
+        color: $font-color2;
+        font-weight: 600;
+        &:hover{
+            transition: all .3s ease-in;
+            transform: scale(1.5);
+            color: adjust-color($color: #000000, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
+        }
+    }
+    &__nav{
+        width: 100%;
+        justify-content: space-evenly;  
+        display: flex;
+        gap: 50%;
+        &--link{
+            &:hover{
+                transition: all .3s ease-in;
+                color: $contrast2;
+            }
+        }
+    }
+}
+
